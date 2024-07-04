@@ -46,39 +46,39 @@ You can view the mockup design for the Air landing page [here](<https://www.figm
 
 To run this project locally, follow these steps:
 
-1. Fork the Repository:
-   Click the Fork button in the top right corner of [this page](https://github.com/yuriiyepikhov/Air-landing) to create your copy of the repository on GitHub.
+1. **Fork the Repository**:
+   Click the **Fork** button in the top right corner of [this page](https://github.com/yuriiyepikhov/Air-landing) to create your copy of the repository on GitHub.
 
-2. Clone the Repository:
+2. **Clone the Repository**:
    Open your terminal, navigate to the directory where you want to store the project, and clone the repository into that directory:
 
 ```
 mkdir Air-landing
 cd Air-landing
-git clone https://github.com/yuriiyepikhov/Air-landing.git
+git clone https://github.com/your-username/Air-landing.git
 ```
 
-3. Open in Code Editor:
+3. **Open in Code Editor**:
    Open the project in your code editor (for example, Visual Studio Code):
 
 ```
 code Air-landing
 ```
 
-4. Install Dependencies: Install the necessary dependencies using **npm**:
+4. **Install Dependencies**: Install the necessary dependencies using **npm**:
 
 ```
 npm install
 ```
 
-5. Start the Project:
+5. **Start the Project**:
    Start the project locally:
 
 ```
 npm start
 ```
 
-6. View in Browser:
+6. **View in Browser**:
    Once the project has started, open your web browser and go to http://localhost:8080/ (or another port specified in the console output) to view the Air landing page.
 
 These steps will allow you to run the project locally and make modifications as needed.
