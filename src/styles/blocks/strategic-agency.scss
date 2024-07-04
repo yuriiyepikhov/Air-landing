@@ -1,0 +1,112 @@
+.strategic-agency {
+  &__container {
+    position: relative;
+
+    box-sizing: border-box;
+    height: 797px;
+    background-color: $dark-bg-color;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    @include on-tablet {
+      height: 789px;
+    }
+
+    @include on-laptop {
+      height: 680px;
+      padding-top: 120px;
+    }
+  }
+
+  &__slider {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__content {
+    @include grid-container;
+
+    align-content: start;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    margin: 0;
+    margin-bottom: 32px;
+
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 62.4px;
+    letter-spacing: -2px;
+
+    @include on-tablet {
+      font-size: 64px;
+      line-height: 68px;
+      margin-bottom: 24px;
+    }
+
+    @include on-laptop {
+      grid-column: span 5;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    margin: 0;
+    margin-bottom: 72px;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    @include on-tablet {
+      grid-column: span 4;
+      margin-bottom: 56px;
+    }
+
+    @include on-laptop {
+      grid-column: span 5;
+      margin-bottom: 83px;
+    }
+
+    @include on-desktop {
+      grid-column: span 4;
+    }
+  }
+
+  &__learn-more-link {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    justify-self: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: $blue-color;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22.5px;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+
+    @include on-tablet {
+      grid-column: span 4;
+      justify-self: start;
+      width: 264px;
+    }
+
+    @include pointer-cursor;
+    @include on-hover(background-color, blue);
+  }
+}

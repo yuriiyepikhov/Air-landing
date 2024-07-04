@@ -1,0 +1,173 @@
+.person-card {
+  box-sizing: border-box;
+  height: 456px;
+  padding: 32px 37px;
+  border-radius: 16px;
+  background-color: $white-color;
+  box-shadow: 0 9px 18px 0 #25293108;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @include on-tablet {
+    height: 478px;
+    padding-inline: 98px;
+  }
+
+  @include on-laptop {
+    height: 456px;
+    padding-inline: 43px;
+  }
+
+  @include on-desktop {
+    height: 494px;
+    padding-inline: 56px;
+  }
+
+  @include on-hover(transform, scale(1.1));
+
+  &__avatar-comment-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__avatar {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 196px;
+    height: 196px;
+
+    margin-bottom: 24px;
+
+    @include on-tablet {
+      width: 250px;
+      height: 250px;
+    }
+
+    @include on-laptop {
+      width: 196px;
+      height: 196px;
+    }
+
+    @include on-desktop {
+      width: 250px;
+      height: 250px;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+
+      background-color: $blue-color;
+      border-radius: 12px;
+
+      width: 109px;
+      height: 44px;
+
+      @include on-tablet {
+        width: 139px;
+        height: 56px;
+      }
+
+      @include on-laptop {
+        width: 109px;
+        height: 44px;
+      }
+
+      @include on-desktop {
+        width: 139px;
+        height: 56px;
+      }
+    }
+
+    &::before {
+      top: 0;
+      transform: translate(-35%, 90%) rotate(-60deg);
+    }
+
+    &::after {
+      bottom: 0;
+      transform: translate(35%, -90%) rotate(-60deg);
+    }
+  }
+
+  &__avatar-img {
+    position: absolute;
+    z-index: 1;
+
+    object-fit: cover;
+    object-position: center;
+
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+
+    @include on-tablet {
+      width: 140px;
+      height: 140px;
+    }
+
+    @include on-laptop {
+      width: 110px;
+      height: 110px;
+    }
+
+    @include on-desktop {
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  &__quote {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10.5px;
+
+    background-image: url(../images/icons/quote-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include on-tablet {
+      margin-bottom: 18.5px;
+    }
+
+    @include on-laptop {
+      margin-bottom: 10.5px;
+    }
+  }
+
+  &__comment {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: $description-text-color;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 4px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: $title-text-color;
+  }
+
+  &__job {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: $dark-text-color;
+  }
+}

@@ -1,0 +1,24 @@
+.aside {
+  @include grid-container;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: $dark-bg-color;
+  padding-top: 20px;
+  overflow: auto;
+
+  @include on-laptop {
+    display: none;
+  }
+
+  &__content {
+    grid-column: 1 / -1;
+    height: fit-content;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+}
