@@ -15,24 +15,24 @@ This landing page invites clients to explore Air's philosophy and discover the r
 
 ## Project Overview
 
-This project has been developed using HTML, CSS/SCSS, and JavaScript. The following components and features were implemented:
+This project has been developed using HTML, SCSS, and JavaScript. The following components and features were implemented:
 
 - **Slider** for dynamic content display.
-- **Navigation** for a convenient user experience.
+- **Navigation** for a convenient user experience and easy browsing.
 - **Cards** describing the company's capabilities.
 - Customer review cards for providing **feedback**.
 - User data submission **form**.
 - **Contact links** for easy communication.
-
-These elements enhance interactivity and functionality, ensuring a user-friendly experience on the Air landing page.
 
 ## Technologies Used
 
 The Air landing page was developed using the following technologies:
 
 1. **HTML**: Used for structuring the content and layout of the web page.
-2. **CSS/SCSS**: Utilized for styling and customizing the appearance of the web elements.
+2. **SCSS**: Utilized for styling and customizing the appearance of the web elements.
 3. **JavaScript**: Implemented for the slider.
+
+Together, these technologies provide a responsive landing page that adapts seamlessly to various screen sizes and devices. Whether viewed on a desktop, tablet, or smartphone, the layout and content adjust to provide an optimal user experience.
 
 ## Preview
 
@@ -50,7 +50,7 @@ To run this project locally, follow these steps:
    Click the **Fork** button in the top right corner of [this page](https://github.com/yuriiyepikhov/Air-landing) to create your copy of the repository on GitHub.
 
 2. **Clone the Repository**:
-   Open your terminal, navigate to the directory where you want to store the project, and clone the repository into that directory:
+   Open your terminal, navigate to the directory where you want to store the project, and clone your copy of the repository into that directory:
 
 ```
 mkdir Air-landing
@@ -72,7 +72,7 @@ npm install
 ```
 
 5. **Start the Project**:
-   Start the project locally:
+   Start the project locally on your device:
 
 ```
 npm start
